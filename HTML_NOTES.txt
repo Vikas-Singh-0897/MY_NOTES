@@ -1,0 +1,55 @@
+# HTML --> Hyper Text Markup Language --> Structure of the Pages
+# Documentation --> https://developer.mozilla.org/en-US/docs/Web/HTML
+
+# Tags ( Semantic and Non-Semantic ) && Attributes ( Properties )
+# Character entity --> &copy; &trade; &deg;
+# Container Tag ( Closing Tags ) && Empty Tag ( Self-CLossing Tags )
+
+# Head tag --> Contains MetaData about the Pages
+    * title, link, style, script, base ( href="BASE_URL" )
+    * meta ( charset="UTF-8" ) --> {
+            ~> name="viewport" content="width=device-width, initial-scale=1.0" 
+            ~> name="description" content="summary"
+            ~> name="keywords" content="keyword"
+            ~> name="author" content="Vikas Singh"
+            ~> property="og:title" content="Website Title"
+            ~> property="og:image" content="image.url"
+            ~> og:image:width && og:image:height && og:image:alt
+            ~> property="og:url" content="url"
+            ~> og:description && og:site_name && og:video && og:audio
+        }
+
+# Universal Attributes --> title; id; class; style; dir; hidden; inputmode; 
+# Event Handling --> onclick, onchange, onload, onfocus, onmouseover, onmouseout, onfocus, onblur, onsubmit, onkeydown, onkeyup, etc;
+
+# Body tag --> Contains the Visible/UI Content of the Site
+    * Text --> Heading( h1 to h6 ), p, q, list( ul || ol ), pre
+    * Media --> img, video, audio, a ( href && target )
+    * Structure --> div, section, span, aside, main, header, footer, article, nav
+    * List --> ul, ol, dl ( Description --> dl, dt, dd)
+    * Table --> table, th, tr, td
+    * Form --> form, input, label, button, textarea 
+
+# Attributes --> 
+    * Text --> title, class, id, dir, lang
+    * Media --> src, alt, height, width, download="link", mailto, poster="link"
+    * Table --> rowspan, colspan, headers
+    * Form --> type, name, value, placeholder, required, readonly, disabled, select( option )
+
+# Decoration Tags --> {
+        * bold (b)
+        * strong --> bolds the word (gives importance)
+        * italic (i)
+        * underlines (u)
+        * strike-through (s)
+        * pre --> No change
+        * big (big)
+        * small (small)
+        * superscript (sup)
+        * subscript (sub)
+        * del (delete the text)
+        * q --> used for Quotes / blockquote (cite="") --> used for Quotes
+        * abbr tag with attribute == (title="")
+        * address --> to store address in website
+        * ins/mark (heilight the text)
+    }
