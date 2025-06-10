@@ -1,0 +1,98 @@
+# CSS --> Cascading Style Sheets ( Inline > Internal > External )
+# Selecting Elements --> ( Id > Class > Individual ) && (*) == Universal Selector
+# Variables (inside [: root]) --> (--name: value) --> to use var(--name)
+# Functions --> min(), max(), etc.
+# Media-Queries --> @media type and (condition : breakpoint){ Code }
+
+# Tailwind CSS {
+        * npm install tailwindcss @tailwindcss/cli
+        * src -> input.css --> @import "tailwindcss";
+        * npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+        * <link href="./output.css" rel="stylesheet">
+    }
+
+# Fonts {
+        * font-family -> From External link also possible
+        * font-size -> (px, rem, em, %) --> Browser default 16px
+        * font-weight -> 
+        * font-Style -> (italic, normal, etc)
+        * font-shadow -> x y blur-value color;
+        * font-transform -> (uppercase, lowercase)
+        * font-decoration -> (underline, overline, line-through, none) 
+        * line-height -> 
+        * letter-spacing -> 
+    }
+
+# Color {
+        * color -> (rgb, hex, rgba)
+        * background-color
+        * background-image -> url("image.jpg");
+        * border -> width style color
+        * outline -> width style color
+        * box-shadow -> x y blur-value color
+    }
+
+# Allignmet {
+        * margin -> x y
+        * padding -> x y
+        * indent -> Space for first line
+        * text-align -> left, right, center, justify --> HORIZONTAL INLINE
+        * vertical-align -> baseline, middle, bottom, top --> VERTICAL INLINE
+        * justify-content -> left, right, center, justify --> FLEX
+        * align-items -> flex-start, flex-end, center, baseline --> FLEX
+        * justify-content -> start, end, center, stretch
+    }
+
+# Position {
+        * static -> default
+        * relative -> relative to parent
+        * fixed 
+        * absolute
+        * sticky
+    }
+
+# Display {
+        * block
+        * inline
+        * inline-block
+        * flex
+        * grid
+    }
+
+# Flex {
+        * flex : grow shrink basis;
+        * flex-direction : (row(default), column)
+        * flex-wrap: wrap --> wrapes the element
+        * flex-flow: direction wrap-style; --> short hand for both
+        * To Center Element --> (display: flex; align-items: center; justify-content: center;)
+        * flex-basis --> minimum width
+    }
+
+# Grid {
+        * grid-template-row : repeat(number, width)
+        * grid-template-column : repeat(number, width)
+        * grid-column-start && grid-column-end || grid-row-start && grid-row-end
+        * short-hand --> grid-row: start/end; && grid-column: start/end;
+        * place-content : (center, left, right, etc);
+    }
+
+
+# Psudo-class {
+        * :hover -> applies whrn we hover on the Element
+        * :visited -> applies on link after visiting the link
+        * :active -> applies on element after click
+        * :target -> applies on the targeted element
+        * :focus -> applies while key ctrl when focused 
+        * :nth-child(val) -> val == (even, odd, number);
+    }
+
+# Psudo Element {
+        * ::before → Inserts content before an element
+        * ::after → Inserts content after an element
+        * ::first-letter → Styles the first letter of a block
+        * ::marker --> content : "string-message";
+    }
+
+# Other {
+        * overflow -> visible, hidden, scroll, auto
+    }
